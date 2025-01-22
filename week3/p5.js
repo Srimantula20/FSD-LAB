@@ -33,7 +33,6 @@ function notifyUser(userId, success, callback) {
     }, 1000);
 }
 
-// Main function to process the payment
 function processPaymentSystem(userId, amount) {
     authenticateUser(userId, (err, authResult) => {
         if (err) return console.error("Authentication failed");
@@ -57,5 +56,4 @@ function processPaymentSystem(userId, amount) {
     });
 }
 
-// Test the system
 processPaymentSystem("User123", 50);
